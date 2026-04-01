@@ -1,335 +1,659 @@
-# Wellness Monitoring System
-## World-Class Health Analytics Platform 
+# 🌟 Elite Wellness Monitoring System
 
-A **professional, enterprise-grade health and fitness analytics platform** positioned for global market leadership. Privacy-first architecture, HIPAA/GDPR compliant, and seamless multi-wearable integration.
+![Java](https://img.shields.io/badge/Java-24-orange.svg)
+![Swing](https://img.shields.io/badge/GUI-Java_Swing-blue.svg)
+![Build](https://img.shields.io/badge/Build-Maven-brightgreen.svg)
+![SDG](https://img.shields.io/badge/SDG-3_Good_Health-success.svg)
 
-### 🚀 Mission
-Empower individuals and enterprises with actionable health insights through secure, scientifically-backed analytics.
+> **A comprehensive, local-first Java desktop application for tracking health, building habits, and generating AI-driven wellness insights.**
 
-### 💎 Key Features
-- **Multi-Platform**: Desktop (Java Swing), Mobile (React Native), Web API (Node.js/Express)
-- **Wearable Integration**: Fitbit, Apple Health, Google Fit, Garmin, Oura
-- **Advanced Analytics**: AI-powered insights, trend analysis, moving averages, weighted scoring
-- **Enterprise Security**: HIPAA/GDPR compliance, AES-256 encryption, audit logging, SOC2 Type II
-- **Subscription Model**: Free, Pro ($9.99/mo), Premium ($19.99/mo)
-- **Professional UI**: Minimalist black-and-white design (timeless, accessible)
-- **Cloud Sync**: Real-time data synchronization across devices
-- **Telemetry**: Event logging and analytics (privacy-respecting)
-- **Onboarding**: Guided user experience with health goal configuration
-- **Collections**: `ArrayList`, `HashMap`, `LinkedList`
-- **File I/O & Database**: Text files + MongoDB + REST API persistence
-- **OOP**: Full encapsulation, inheritance, polymorphism, and abstraction
+The **Elite Wellness Monitoring System** is a beautifully designed, object-oriented desktop application built for users who want to take control of their daily health and wellness. It combines health tracking, goal setting, habit formation, and predictive analytics into a single, intuitive interface.
 
-## Project Architecture
+---
 
-### Desktop Application (Java)
-```
-src/wellness/
-  ├── Main.java (Entry point)
-  ├── model/ (Data models)
-  │   ├── AbstractRecord.java
-  │   ├── HealthRecord.java
-  │   ├── ActivityRecord.java
-  │   ├── UserAccount.java
-  │   ├── WellnessProfile.java
-  │   └── AlertLevel.java
-  ├── service/ (Business logic)
-  │   ├── AnalyticsEngine.java
-  │   ├── AdvancedAnalytics.java
-  │   ├── WellnessAnalyzer.java
-  │   ├── ScoringPipeline.java
-  │   ├── ContributorRegistry.java
-  │   ├── MovingAverage.java
-  │   ├── AuthService.java
-  │   ├── CloudSyncService.java
-  │   ├── TelemetryService.java
-  │   ├── DataStore.java
-  │   └── OnboardingService.java
-  ├── ui/ (User interface)
-  │   ├── MainFrame.java
-  │   ├── DashboardPanel.java
-  │   ├── LoginDialog.java
-  │   └── RecordTableModel.java
-  └── test/ (Unit tests)
-      ├── AnalyticsPipelineTest.java
-      ├── AnalyticsTest.java
-      └── TelemetryTest.java
-```
+## ✨ Features
 
-### Backend API (Node.js/Express)
-```
-backend/
-  ├── src/
-  │   ├── index.js (Server entry)
-  │   └── routes/
-  │       ├── auth.js (Authentication)
-  │       ├── wellness.js (Wellness data)
-  │       ├── wearables.js (Wearable integrations)
-  │       ├── subscription.js (Billing)
-  │       └── analytics.js (Advanced analytics)
-  ├── package.json
-  └── .env.example
-```
+- **📊 Advanced Dashboard:** Real-time KPI tracking, health scores, and dynamic trend charts.
+- **🎯 Goals & Habits Manager:** Track daily habits, build streaks, and manage long-term wellness goals with visual interactive cards.
+- **🤖 AI Wellness Assistant:** Built-in simulated chatbot offering personalized health recommendations and alerts based on your data.
+- **📈 Predictive Analytics:** Scenario simulators and executive briefs to forecast future health outcomes.
+- **💾 Local-First Privacy:** All data (profiles, records, telemetry) is stored securely on your local files using standard Java File I/O.
+- **🎨 Modern UI:** A fully animated, responsive, and highly polished Java Swing graphical interface.
 
-### Mobile App (React Native)
-```
-mobile/
-  ├── App.js (Entry point)
-  ├── screens/
-  │   ├── LoginScreen.js
-  │   ├── OnboardingScreen.js
-  │   ├── DashboardScreen.js
-  │   ├── WearableConnectionScreen.js
-  │   └── SettingsScreen.js
-  └── package.json
-```
+---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
-- Java 11+ (JDK)
-- Node.js 18+ (for backend API)
-- NPM/Yarn (for backend & mobile)
-- Xcode (for iOS) / Android SDK (for Android)
+- **Java Development Kit (JDK) 24** or higher
+- **Apache Maven** (for building the project)
 
-### Desktop App (Java Swing)
-```bash
-cd WellnessMonitoringSystem
-mkdir -p out
-javac -d out $(find src -name "*.java")
+### Installation & Running
 
-# Run the GUI application (shows login dialog)
-java -cp out wellness.Main
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rashid714/wellness-applcation.git
+   cd wellness-applcation
+   ```
 
-# Run units tests
-java -cp out wellness.test.AnalyticsPipelineTest
-java -cp out wellness.test.TelemetryTest
+2. **Build the application:**
+   You can easily compile and package the project using the provided scripts:
+   ```bash
+   bash build.sh
+   # This will compile the code, run smoke tests, and generate dist/EliteWellness.jar
+   ```
+
+3. **Run the application:**
+   ```bash
+   java -jar dist/EliteWellness.jar
+   ```
+
+*(Alternatively, you can just run `bash run.sh` to compile and launch in one step).*
+
+---
+
+## Enterprise Vision and Mission
+
+### Vision
+A professional, enterprise-grade health and fitness analytics platform positioned for global market leadership.
+
+### Mission
+Empower individuals and organizations with actionable, secure, and scientifically grounded wellness insights.
+
+### Platform Direction
+- Privacy-first architecture
+- HIPAA/GDPR-aligned design approach
+- Multi-wearable integration-ready APIs
+- AI-informed analytics and recommendations
+
+---
+
+## Expanded Key Features
+
+- Multi-Platform Architecture (current project scope):
+   - Java Desktop Application (Swing)
+   - Optional Web API module (Node.js/Express)
+- Wearable Integration Routes (API scaffolding):
+   - Fitbit
+   - Apple Health
+   - Google Fit
+   - Garmin
+   - Oura
+- Advanced Analytics:
+   - Weighted wellness scoring
+   - Trend analysis
+   - Moving average smoothing
+   - Scenario simulation
+- Security and Governance Orientation:
+   - Privacy-first local storage model
+   - Audit/telemetry events
+   - Compliance-ready architecture patterns
+- Subscription and Commercial Model (API module):
+   - Free
+   - Pro
+   - Premium
+- Professional UI/UX:
+   - Dashboard KPI cards
+   - Goal and habit operation boards
+   - Assistant and insights workflows
+- Cloud Sync Ready:
+   - Service abstraction for sync workflows
+- Onboarding:
+   - Guided setup and goal configuration
+
+---
+
+## Project Architecture Overview
+
+### Desktop Application (Java)
+
+```text
+src/wellness/
+   Main.java
+   model/
+      AbstractRecord.java
+      HealthRecord.java
+      ActivityRecord.java
+      UserAccount.java
+      WellnessProfile.java
+      AlertLevel.java
+      ScoreContributor.java
+   service/
+      AnalyticsEngine.java
+      AdvancedAnalytics.java
+      WellnessAnalyzer.java
+      ScoringPipeline.java
+      ContributorRegistry.java
+      MovingAverage.java
+      AuthService.java
+      CloudSyncService.java
+      TelemetryService.java
+      DataStore.java
+      GoalTracker.java
+      HabitTracker.java
+      MLAnalyticsEngine.java
+      DataVisualizationEngine.java
+      OnboardingService.java
+      PredictiveAnalytics.java
+      WellnessBot.java
+      WellnessManager.java
+      AlertService.java
+      AutomationService.java
+   ui/
+      MainFrame.java
+      DashboardPanel.java
+      AdvancedInsightsPanel.java
+      AIInsightsPanel.java
+      GoalsHabitsPanel.java
+      ChatbotPanel.java
+      LoginDialog.java
+      RecordTableModel.java
+   test/
+      AnalyticsPipelineTest.java
+      AnalyticsTest.java
+      TelemetryTest.java
 ```
 
-### Production Demo (Recommended)
-```bash
-cd WellnessMonitoringSystem
+### Optional Backend API Module (Node.js/Express)
 
-# One command: verify + build + run
-bash demo.sh
+```text
+backend/
+   src/
+      index.js
+      routes/
+         auth.js
+         wellness.js
+         wearables.js
+         subscription.js
+         analytics.js
+   package.json
 ```
 
-Alternative commands:
-```bash
-# Verify only (clean compile + smoke tests)
-bash verify.sh
+---
 
-# Build runnable JAR
-bash build.sh
+## Data Structures and Algorithms
 
-# Run app from JAR
-bash run.sh
-```
+### Collections Used
+- ArrayList
+- HashMap
+- LinkedList and list-based queue workflows (where applicable)
 
-### Backend API (Node.js)
-```bash
-cd backend
-npm install
+### Algorithms and Processing
+- Moving average smoothing for trend stabilization
+- Weighted scoring across multiple contributors
+- Time-series trend evaluation
+- Goal progression computation
+- Habit streak computation
 
-# Configure environment
-cp .env.example .env
-# Edit .env with your credentials
+---
 
-# Start the server
-npm start
+## API Endpoints (Optional Backend Module)
 
-# API will be available at http://localhost:3000
-```
+### Authentication
+- POST /api/auth/register
+- POST /api/auth/login
+- POST /api/auth/verify
 
-### Mobile App (React Native)
-```bash
-cd mobile
-npm install
+### Wellness Data
+- GET /api/wellness/records
+- POST /api/wellness/record
+- GET /api/wellness/summary
 
-# Run on iOS
-npm run ios
+### Wearable Integration
+- POST /api/wearables/fitbit/auth
+- GET /api/wearables/apple/auth
+- POST /api/wearables/google/auth
 
-# Run on Android
-npm run android
-```
+### Subscription
+- POST /api/subscription/upgrade
+- GET /api/subscription/current
+- GET /api/subscription/tiers
 
-### API Endpoints (Backend)
+### Analytics
+- GET /api/analytics/trends
+- GET /api/analytics/insights
+- GET /api/analytics/score
 
-**Authentication**
-- `POST /api/auth/register` - Register new user
-- `POST /api/auth/login` - Login and get JWT token
-- `POST /api/auth/verify` - Verify JWT token
-
-**Wellness Data**
-- `GET /api/wellness/records` - Get wellness records
-- `POST /api/wellness/record` - Add wellness record
-- `GET /api/wellness/summary` - Get daily summary
-
-**Wearable Integration**
-- `POST /api/wearables/fitbit/auth` - Initiate Fitbit OAuth
-- `GET /api/wearables/apple/auth` - Apple HealthKit setup
-- `POST /api/wearables/google/auth` - Google Fit OAuth
-
-**Subscription**
-- `POST /api/subscription/upgrade` - Upgrade subscription tier
-- `GET /api/subscription/current` - Get current subscription
-- `GET /api/subscription/tiers` - List available tiers
-
-**Analytics**
-- `GET /api/analytics/trends` - Get wellness trends
-- `GET /api/analytics/insights` - Get AI insights
-- `GET /api/analytics/score` - Calculate wellness score
-
-## Documentation
-
-- **[Product Specification](docs/PRODUCT_SPEC.md)** - Detailed feature set and product vision
-- **[Security & Compliance](docs/SECURITY_COMPLIANCE.md)** - HIPAA/GDPR, encryption, audit logging, data protection
-- **[Commercialization Roadmap](docs/COMMERCIALIZATION_ROADMAP.md)** - Path to $1B+ valuation, phases, KPIs, and funding
-- **[UML Class Diagram](docs/UML_Class_Diagram.md)** - Architecture and class relationships
-
-## OOP Requirements Mapping
-
-### Core OOP Principles
-- **Classes & Objects**: 15+ classes (models, services, UI components)
-- **Encapsulation**: Private fields with getters/setters, data validation
-- **Inheritance**: `AbstractRecord` → `HealthRecord`, `ActivityRecord`; `UserAccount` hierarchy
-- **Polymorphism**: 
-  - Runtime dispatch of `AbstractRecord` implementations
-  - `ScoreContributor` interface with multiple implementations
-  - Overridden methods in analytics engines
-- **Abstraction**: 
-  - `AbstractRecord` abstract class
-  - `ScoreContributor` interface for extensible scoring
-  - Service interfaces for auth, sync, analytics
-
-### Data Structures & Algorithms
-- **Collections**: `ArrayList` (record lists), `HashMap` (user profiles), `LinkedList` (event queues)
-- **Algorithms**: 
-  - Moving average (smooth trend data)
-  - Weighted scoring (multiple contributors)
-  - Time-series analysis (trend detection)
-
-### Advanced Features
-- **File I/O**: Text files for local persistence; REST API for cloud
-- **Concurrency**: Async API calls, thread-safe collections
-- **Design Patterns**: 
-  - Registry pattern (`ContributorRegistry`)
-  - Pipeline pattern (`ScoringPipeline`)
-  - Service Locator pattern (`DataStore`)
+---
 
 ## Architecture Highlights
 
 ### Scalability
-- **Desktop**: Single-threaded Swing GUI with background workers
-- **Backend**: Microservices-ready Node.js/Express API
-- **Database**: MongoDB with sharding support
-- **Cache**: Redis (future addition)
+- Modular service design
+- Separation of model, service, and UI layers
+- API expansion path available
 
-### Security
-- JWT-based authentication
-- AES-256 encryption for sensitive data
-- HTTPS/TLS for all communications
-- HIPAA-compliant audit logging
+### Security Orientation
+- Local-first storage in academic mode
+- Telemetry/audit event trail
+- Structure prepared for JWT/encryption/compliance expansion
 
 ### Performance
-- Moving average smoothing (reduces noise in time-series data)
-- Efficient algorithms for score calculation
-- Query optimization (indexed fields)
-- Caching layer for analytics
-
-## Development & Testing
-
-### Build & Test
-```bash
-# Compile all Java sources
-javac -d out $(find src -name "*.java")
-
-# Run analytics pipeline test
-java -cp out wellness.test.AnalyticsPipelineTest
-
-# Run telemetry test
-java -cp out wellness.test.TelemetryTest
-
-# Backend tests
-cd backend && npm test
-
-# Mobile tests
-cd mobile && npm test
-```
-
-### Local Release Validation
-- Use `bash verify.sh` before every presentation/demo
-- Use `bash build.sh` to generate `dist/EliteWellness.jar`
-- Use `bash run.sh` for predictable startup from packaged artifact
-
-## Roadmap & Next Steps
-
-### Phase 1 (Months 1-6): Foundation ✅
-- [x] Core models & analytics engine
-- [x] Desktop GUI (Java Swing)
-- [x] Backend API scaffold (Node.js/Express)
-- [x] Wearable integrations (OAuth stubs)
-- [x] Subscription system
-- [x] Security & compliance framework
-- [x] Mobile app scaffold (React Native)
-- [x] Local release validation scripts
-
-### Phase 2 (Months 7-18): Growth
-- [ ] Public launch (App Store, Google Play, Web)
-- [ ] 500K users goal
-- [ ] Enterprise B2B partnerships
-- [ ] Series A funding($15-25M)
-- [ ] Advanced AI insights
-
-### Phase 3 (Months 19-36): Scale
-- [ ] 3M users goal
-- [ ] $25M ARR
-- [ ] Series B funding ($50-100M)
-- [ ] Private-label wearable device
-- [ ] Clinical partnerships (FDA approval)
-
-### Phase 4 (Months 37+): Market Leadership
-- [ ] 50M+ users
-- [ ] $500M+ ARR
-- [ ] $1B+ valuation (IPO or acquisition)
-- [ ] Global market presence
-
-See [Commercialization Roadmap](docs/COMMERCIALIZATION_ROADMAP.md) for full details.
-
-## Market Position
-
-**Target Competitors**: Whoop, Apple Fitness+, Fitbit Premium, Withings  
-**Differentiation**:
-- Privacy-first architecture (HIPAA/GDPR compliant)
-- Open API (developer ecosystem)
-- Minimalist design (black-and-white aesthetic)
-- Enterprise focus (B2B + B2C dual revenue)
-
-## Contributing
-
-Guidelines:
-1. Follow OOP principles and design patterns
-2. Maintain HIPAA/GDPR compliance in all changes
-3. Add unit tests for new features
-4. Update documentation (README, UML diagrams, product spec)
-5. Submit pull requests with detailed descriptions
-
-## License
-
-Proprietary License - All rights reserved. © 2026 Wellness Monitoring System Inc.
-
-## Contact & Support
-
-- **Product Website**: (Coming soon)
-- **Documentation**: See `/docs` folder
-- **Support Email**: support@wellnessmonitoring.app
-- **Enterprise Sales**: enterprise@wellnessmonitoring.app
+- Efficient collection operations
+- Lightweight local file persistence
+- Incremental analytics refresh
 
 ---
 
-**Vision**: Build the world's most trusted health analytics platform, empowering millions to live healthier, more fulfilling lives.
+## Roadmap and Next Steps
 
-## Notes
-- The system auto-creates the `data/` folder if missing.
-- Sample records can be added through the GUI.
-- This app is designed for academic demonstration and simulation.
+### Phase 1: Foundation (Completed)
+- Core models and analytics
+- Java GUI workflows
+- Goal/habit operations
+- Verification and build scripts
+
+### Phase 2: Growth
+- Public hardening and wider integrations
+- Enhanced AI recommendations
+
+### Phase 3: Scale
+- Enterprise analytics and integrations
+
+### Phase 4: Leadership
+- Global-grade maturity and expanded platform capabilities
+
+---
+
+## Market Positioning
+
+Target benchmarks:
+- Whoop
+- Apple Fitness+
+- Fitbit Premium
+
+Differentiators:
+- Privacy-first architecture
+- Strong OOP and modular design
+- Report-ready and demo-ready UX
+- Academic-grade engineering plus productization path
+
+---
+---
+
+# 🎓 Academic Final Project Report
+## SDG-Based Object-Oriented Application Development
+
+## 1. Cover Page
+
+Project Title:
+- Elite Wellness Monitoring System
+
+Selected SDG:
+- SDG 3: Good Health and Well-being
+
+Course Information:
+- Course: [COURSE NAME]
+- Class Code: [CLASS CODE]
+- Program: [PROGRAM]
+- Presentation Date: 2 April 2026
+
+Team Information (required by assignment):
+- Team Leader Full Name: [FULL NAME]
+- Team Leader Student ID: [STUDENT ID]
+- Team Leader NRIC/Passport: [NRIC/PASSPORT]
+- Member 2 Full Name: [FULL NAME]
+- Member 2 Student ID: [STUDENT ID]
+- Member 2 NRIC/Passport: [NRIC/PASSPORT]
+- Member 3 Full Name: [FULL NAME]
+- Member 3 Student ID: [STUDENT ID]
+- Member 3 NRIC/Passport: [NRIC/PASSPORT]
+
+Repository URL (required):
+- GitHub: [PASTE YOUR GITHUB REPOSITORY URL]
+
+---
+
+## 2. Introduction and SDG Background
+
+This project develops a Java-based GUI application to support healthier daily behavior through tracking, analytics, and guided decisions. The selected SDG is SDG 3 (Good Health and Well-being), which focuses on improving health outcomes and quality of life.
+
+Modern users face common wellness problems such as poor sleep consistency, low activity, dehydration, stress, and lack of structured habit tracking. Existing tools are often fragmented and do not combine profile, records, goals, habits, analytics, and recommendations in one system.
+
+The Elite Wellness Monitoring System addresses this by offering a complete local Java application with data management, score computation, trend analysis, alerting logic, and interactive dashboards.
+
+---
+
+## 3. Problem Statement
+
+Users need a practical system that can:
+- Collect health and activity data in one place.
+- Track progress against daily and weekly goals.
+- Convert records into clear wellness insights.
+- Provide consistent habit and recommendation support.
+- Persist data between sessions.
+
+Without such a system, users rely on memory or multiple disconnected apps, resulting in low adherence and weak decision-making.
+
+---
+
+## 4. System Objectives
+
+The project objectives are:
+- Build a working Java GUI system (Swing-based) for wellness simulation.
+- Apply OOP principles correctly: encapsulation, inheritance, polymorphism, abstraction.
+- Use collections and file handling for data persistence.
+- Implement meaningful processing logic, not only CRUD.
+- Provide clear and professional UI output for demonstration.
+- Deliver a stable, testable application for final presentation.
+
+---
+
+## 5. Project Scope and Functional Requirements
+
+### 5.1 Included Features
+- Authentication and login dialog.
+- User profile creation and update.
+- Health record and activity record management.
+- Dashboard with KPI cards and trend visualizations.
+- Goals and habits management (add, update, delete, complete).
+- Habit operations board and goal portfolio views.
+- AI assistant guidance modes.
+- Advanced insights, scenario simulation, and executive brief export.
+- Telemetry logging and analytics smoke tests.
+
+### 5.2 Processing and Simulation Logic
+- Wellness scoring engine with contributors.
+- Trend smoothing and moving average behavior.
+- Goal progress computation.
+- Habit streak and completion metrics.
+- Alert-level logic and recommendation generation.
+
+---
+
+## 6. OOP Design and UML
+
+The system follows layered structure:
+- Model layer: domain entities and abstract/base contracts.
+- Service layer: business logic, analytics, alerting, automation.
+- UI layer: Swing panels, frame orchestration, user workflows.
+
+UML reference:
+- See docs/UML_Class_Diagram.md (Mermaid class diagram included).
+
+### 6.1 OOP Principle Mapping
+
+Encapsulation:
+- Private fields with controlled access in model classes.
+- Validation handled through constructors and setters.
+
+Inheritance:
+- AbstractRecord as abstract parent.
+- HealthRecord and ActivityRecord extend AbstractRecord.
+
+Polymorphism:
+- AbstractRecord references used to process mixed record types at runtime.
+- Contributor-oriented score calculation through interface contracts.
+
+Abstraction:
+- Abstract base class AbstractRecord.
+- Interface ScoreContributor.
+
+---
+
+## 7. Package and Class Breakdown
+
+### 7.1 Java Source Package Structure
+
+Root package:
+- wellness
+
+Sub-packages:
+- wellness.model
+- wellness.service
+- wellness.ui
+- wellness.test
+
+### 7.2 wellness.model Classes
+- AbstractRecord
+- ActivityRecord
+- AlertLevel
+- HealthRecord
+- ScoreContributor
+- UserAccount
+- WellnessProfile
+
+### 7.3 wellness.service Classes
+- AdvancedAnalytics
+- AlertService
+- AnalyticsEngine
+- AuthService
+- AutomationService
+- CloudSyncService
+- ContributorRegistry
+- DataStore
+- DataVisualizationEngine
+- GoalTracker
+- HabitTracker
+- MLAnalyticsEngine
+- MovingAverage
+- OnboardingService
+- PredictiveAnalytics
+- ScoringPipeline
+- TelemetryService
+- WellnessAnalyzer
+- WellnessBot
+- WellnessManager
+
+### 7.4 wellness.ui Classes
+- AIInsightsPanel
+- AdvancedDashboardPanel
+- AdvancedInsightsPanel
+- ChatbotPanel
+- DashboardPanel
+- GoalsHabitsPanel
+- LoginDialog
+- MainFrame
+- RecordTableModel
+
+### 7.5 wellness.test Classes
+- AnalyticsPipelineTest
+- AnalyticsTest
+- TelemetryTest
+
+### 7.6 Main Entry Point
+- wellness.Main
+
+---
+
+## 8. Technology and Dependencies
+
+This submission uses Java only.
+
+- Language: Java
+- UI: Java Swing
+- Build: Maven (source directory configured as src)
+- Java Release: 24
+- Persistence: local file handling under data/
+
+---
+
+## 9. Collections and File Handling
+
+Collections used in the Java application:
+- ArrayList
+- HashMap
+- Other standard Java collection constructs in service/UI logic
+
+File handling and persistence:
+- User, profile, and records data are persisted in local files.
+- Telemetry output is written for testable logging behavior.
+
+This satisfies the assignment requirement for collections and file I/O persistence.
+
+---
+
+## 10. UML Class Diagram (Important Classes)
+
+```mermaid
+classDiagram
+direction LR
+
+class Main
+class MainFrame
+class LoginDialog
+
+class WellnessManager
+class DataStore
+class AnalyticsEngine
+class GoalTracker
+class HabitTracker
+class WellnessBot
+
+class WellnessProfile
+class ScoreContributor
+class AbstractRecord
+class HealthRecord
+class ActivityRecord
+
+Main --> LoginDialog : authenticate
+Main --> MainFrame : launch UI
+
+MainFrame --> WellnessManager : manage app state
+MainFrame --> GoalTracker : goals
+MainFrame --> HabitTracker : habits
+MainFrame --> WellnessBot : assistant
+
+WellnessManager --> DataStore : load/save
+WellnessManager --> AnalyticsEngine : scoring
+WellnessManager --> WellnessProfile : profile
+WellnessManager --> AbstractRecord : records
+
+AbstractRecord ..|> ScoreContributor
+HealthRecord --|> AbstractRecord
+ActivityRecord --|> AbstractRecord
+```
+
+---
+
+## 11. Implementation Details (Key Workflows)
+
+### 11.1 User Flow
+1. User opens app and signs in through LoginDialog.
+2. WellnessManager loads existing profile and records from data store.
+3. User adds health and activity records through the UI.
+4. Dashboard updates KPIs and trends.
+5. User manages goals and habits with update/delete/complete actions.
+6. Advanced insights panel computes forecasts and scenarios.
+
+### 11.2 Goal and Habit Management
+- CRUD operations supported in GoalTracker and HabitTracker.
+- UI supports add/update/delete/complete workflows.
+- Portfolio and operations views present data in structured visual format.
+
+### 11.3 Analytics and Insights
+- Score engine combines profile and record factors.
+- Trend analysis and smoothing are displayed in dashboard charts.
+- Advanced insights provide scenarios and executive summaries.
+
+---
+
+## 12. Build, Run, and Test
+
+Prerequisites:
+- JDK 24
+- Maven
+
+Commands:
+
+```bash
+# Verify compile + smoke tests
+bash verify.sh
+
+# Build release JAR
+bash build.sh
+
+# Run application
+java -jar dist/EliteWellness.jar
+```
+
+Alternative direct run:
+
+```bash
+mkdir -p out
+find src -name '*.java' -print0 | xargs -0 javac -d out
+java -cp out wellness.Main
+```
+
+---
+
+## 13. Testing and Sample Output
+
+Observed verification status:
+- Compile: PASSED
+- Analytics pipeline smoke test: PASSED
+- Telemetry smoke test: PASSED
+
+Sample telemetry output (from smoke run):
+- Telemetry events written.
+- Weighted score: 84.925
+- Trend: 25.125
+
+---
+
+## 14. Code Quality and Documentation
+
+Code quality practices applied:
+- Modular package structure with clear separation of concerns.
+- Consistent naming for classes/methods.
+- Services isolate business logic from UI.
+- Reusable components for records, tracking, analytics, and visualization.
+
+Documentation included in docs/:
+- Product specification
+- UML class diagram
+- Presentation demo guide
+- Features inventory
+- Commercialization roadmap
+- Security and compliance notes
+- Final project report
+
+---
+
+## 15. Team Contribution and Collaboration
+
+Suggested section for final submission (edit with actual details):
+- Member 1: Core architecture, service implementation, data layer.
+- Member 2: UI/UX implementation, dashboard, goals/habits interactions.
+- Member 3: Testing, documentation, presentation preparation.
+
+Collaboration approach:
+- Shared planning and task division.
+- Continuous integration of code changes.
+- Joint verification and rehearsal for demo.
+
+---
+
+## 16. Discussion and Limitations
+
+Strengths:
+- Functional and stable Java GUI application.
+- Strong OOP implementation with practical class relationships.
+- Real processing logic for scoring, alerts, trends, and progress.
+- Good assignment fit for SDG 3 use case.
+
+Current limitations:
+- Local file storage is suitable for course scope but not enterprise-scale.
+- Some advanced features are simulation-level, not production cloud deployment.
+
+---
+
+## 17. Future Improvements
+
+Potential next steps:
+- Replace local persistence with database-backed storage.
+- Add secure cloud sync and multi-device account state.
+- Expand recommendation intelligence with more robust AI/ML models.
+- Improve role-based access and audit reporting for enterprise mode.
+
+---
+
+## 18. Final Submission Checklist
+
+Before submission on CityU LMS, ensure:
+- Team details are fully filled (name, ID, class code, program, NRIC/passport).
+- GitHub repository URL is inserted.
+- PDF export generated from this report.
+- Source code is complete and runnable.
+- Live demo prepared (10 to 15 minutes).
+- All members are ready to present.
