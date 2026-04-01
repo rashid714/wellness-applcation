@@ -1,0 +1,16 @@
+# Build outputs
+out/
+target/
+dist/
+
+# Node/mobile folders not needed for Java assignment submission
+backend/node_modules/
+mobile/node_modules/
+
+# OS/editor
+.DS_Store
+.vscode/
+.settings/
+
+# Logs
+data/telemetry.log
