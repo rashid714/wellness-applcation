@@ -282,25 +282,6 @@ Project Title:
 Selected SDG:
 - SDG 3: Good Health and Well-being
 
-Course Information:
-- Course: [COURSE NAME]
-- Class Code: [CLASS CODE]
-- Program: [PROGRAM]
-- Presentation Date: 2 April 2026
-
-Team Information (required by assignment):
-- Team Leader Full Name: [FULL NAME]
-- Team Leader Student ID: [STUDENT ID]
-- Team Leader NRIC/Passport: [NRIC/PASSPORT]
-- Member 2 Full Name: [FULL NAME]
-- Member 2 Student ID: [STUDENT ID]
-- Member 2 NRIC/Passport: [NRIC/PASSPORT]
-- Member 3 Full Name: [FULL NAME]
-- Member 3 Student ID: [STUDENT ID]
-- Member 3 NRIC/Passport: [NRIC/PASSPORT]
-
-Repository URL (required):
-- GitHub: [PASTE YOUR GITHUB REPOSITORY URL]
 
 ---
 
