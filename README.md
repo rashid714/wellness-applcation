@@ -1,5 +1,5 @@
 # Wellness Monitoring System
-## World-Class Health Analytics Platform for the Billion-Dollar Era
+## World-Class Health Analytics Platform 
 
 A **professional, enterprise-grade health and fitness analytics platform** positioned for global market leadership. Privacy-first architecture, HIPAA/GDPR compliant, and seamless multi-wearable integration.
 
